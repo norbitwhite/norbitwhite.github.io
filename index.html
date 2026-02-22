@@ -6,12 +6,11 @@
 
 <title>Norbit White Design</title>
 
-<!-- Fonte Inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<!-- 🔥 MONETAG SCRIPT ZONE 1 -->
+<!-- MONETAG ZONE 1 -->
 <script>
 (function(s){
 s.dataset.zone='10640707',
@@ -23,7 +22,7 @@ s.src='https://nap5k.com/tag.min.js'
 .appendChild(document.createElement('script')))
 </script>
 
-<!-- 🔥 MONETAG SCRIPT ZONE 2 -->
+<!-- MONETAG ZONE 2 -->
 <script>
 (function(s){
 s.dataset.zone='10640751',
@@ -34,6 +33,12 @@ s.src='https://nap5k.com/tag.min.js'
 .pop()
 .appendChild(document.createElement('script')))
 </script>
+
+<!-- NOVA ZONE 213430 -->
+<script src="https://quge5.com/88/tag.min.js"
+data-zone="213430"
+async
+data-cfasync="false"></script>
 
 <style>
 *{
@@ -49,6 +54,7 @@ color:white;
 overflow-x:hidden;
 }
 
+/* HEADER ORIGINAL */
 header{
 text-align:center;
 padding:90px 20px;
@@ -95,6 +101,48 @@ margin-top:10px;
 color:#ddd;
 }
 
+/* SLIDER */
+.slider{
+overflow:hidden;
+margin-top:40px;
+}
+
+.slider-track{
+display:flex;
+gap:20px;
+width:max-content;
+animation:scrollSlider 25s linear infinite;
+}
+
+.slide{
+min-width:300px;
+height:180px;
+border-radius:15px;
+overflow:hidden;
+border:1px solid rgba(161,0,255,0.5);
+}
+
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.6s;
+}
+
+.slide:hover img{
+transform:scale(1.08);
+}
+
+@keyframes scrollSlider{
+0%{ transform:translateX(0); }
+100%{ transform:translateX(-50%); }
+}
+
+.slider:hover .slider-track{
+animation-play-state:paused;
+}
+
+/* CARDS */
 .container{
 max-width:1000px;
 margin:auto;
@@ -198,6 +246,23 @@ width:35px;
 <header>
 <h1>Norbit White Design</h1>
 <p>Design profissional para quem quer crescer</p>
+
+<div class="slider">
+<div class="slider-track">
+
+<div class="slide"><img src="slide1.jpg"></div>
+<div class="slide"><img src="slide2.jpg"></div>
+<div class="slide"><img src="slide3.jpg"></div>
+<div class="slide"><img src="slide4.jpg"></div>
+
+<div class="slide"><img src="slide1.jpg"></div>
+<div class="slide"><img src="slide2.jpg"></div>
+<div class="slide"><img src="slide3.jpg"></div>
+<div class="slide"><img src="slide4.jpg"></div>
+
+</div>
+</div>
+
 </header>
 
 <section class="container">
